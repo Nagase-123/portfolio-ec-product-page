@@ -385,7 +385,7 @@ footer p {
 /*****
 *** ここからモバイル ***
 ******/
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 478px) {
     * {
         margin: 0;
         padding: 0;
@@ -403,9 +403,17 @@ footer p {
         margin-right: 0;
         width: 100%;
     }
+    .navigation-wrapper {
+        width: 100%;
+    }
 
     .navigation2 {
         display: none;
+    }
+
+    .navigation1 {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .navigation1 li {
