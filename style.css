@@ -8,121 +8,195 @@ Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
 body {
-    line-height:1;
+    line-height: 1;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 
 nav ul {
-    list-style:none;
+    list-style: none;
 }
 
-blockquote, q {
-    quotes:none;
+blockquote,
+q {
+    quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
 
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
 /* change colours to suit your needs */
 ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
 }
 
 /* change colours to suit your needs */
 mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
 }
 
 del {
     text-decoration: line-through;
 }
 
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
 }
 
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* change border colour to suit your needs */
 hr {
-    display:block;
-    height:1px;
-    border:0;  
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
-input, select {
-    vertical-align:middle;
+input,
+select {
+    vertical-align: middle;
 }
 
 
-/*PC ここから*/
+/*****
+*** ここからPC ***
+******/
 html {
     min-height: 100vh;
     width: 100%;
 }
-body{
+
+body {
     font-family: Raleway;
-    margin:0 7vw;
+    margin: 0 7vw;
     color: #333333;
-    /* width: 100vw; */
     min-height: 100vh;
 }
 
-
+/*ヘッダー部分*/
 header {
     margin-left: 12vw;
     margin-right: 12vw;
     margin-top: 41px;
 }
+
 .header-logo-wrapper {
     margin-left: auto;
     margin-right: auto;
@@ -130,25 +204,32 @@ header {
     width: 109px;
     height: 19px;
 }
-.header-logo-wrapper img{
+
+.header-logo-wrapper img {
     width: 100%;
     height: 100%;
 }
+
 nav ul {
     display: flex;
 }
+
 .navigation-wrapper {
     display: flex;
     justify-content: space-between;
 }
-nav li{
+
+nav li {
     font-size: 14px;
     margin-right: 14px;
 }
-.navigation-line{
+
+.navigation-line {
     margin-top: 26px;
     width: 100%;
 }
+
+/*メイン*/
 main {
     margin-left: 12vw;
     margin-right: 12vw;
@@ -157,44 +238,55 @@ main {
     gap: 60px;
     height: 100%;
 }
+
+/*左側画像のコンテンツ部分*/
 .left-content {
     width: 50%;
     height: 100%;
 }
-.img-wrapper{
+
+.img-wrapper {
     width: 100%;
     height: 500px;
 }
+
 .img-wrapper img {
     width: 100%;
     height: 100%;
 }
 
+/*右側　製品詳細部分*/
 .right-content {
     width: 50%;
     height: 100%;
 }
+
 .right-content h2 {
     border-top: 1px solid #c3c3c3;
     border-bottom: 1px solid #c3c3c3;
     padding-bottom: 20px;
     padding-top: 20px;
 }
+
 .product-text {
     margin-top: 20px;
     margin-bottom: 33px;
     line-height: 22px;
     font-size: 12px;
 }
-.product-price{
+
+.product-price {
     margin-bottom: 30px;
 }
-.product-variations{
+
+/*製品テーブル*/
+.product-variations {
     width: 100%;
     /* border: 1px solid  red; */
     font-size: 12px;
     color: #333;
 }
+
 .product-variations th {
     font-weight: normal;
 }
@@ -204,32 +296,34 @@ main {
     padding-bottom: 11px;
     padding-top: 11px;
     border-right: 1px solid #c3c3c3;
-
-    /* padding: 11px 20px; */
 }
-.product-variations-heading2 {
-      width: 68px; 
-      border-right: 1px solid #c3c3c3;
 
-} 
+.product-variations-heading2 {
+    width: 68px;
+    border-right: 1px solid #c3c3c3;
+}
+
 .product-variations-heading3 {
-    width:203px;
-} 
-.product-variations td{
+    width: 203px;
+}
+
+.product-variations td {
     width: 68px;
     text-align: center;
     padding-bottom: 11px;
     padding-top: 11px;
     border-top: 1px solid #c3c3c3;
 }
-.product-variations-data{
-    border-right: 1px solid #c3c3c3;
- }
- select {
-    width: 80%;
- }
 
- button {
+.product-variations-data {
+    border-right: 1px solid #c3c3c3;
+}
+
+select {
+    width: 80%;
+}
+
+button {
     width: 100%;
     height: 50px;
     margin-top: 19px;
@@ -237,111 +331,120 @@ main {
     background-color: #4B4B4B;
     color: #FFFFFF;
     border: none;
- }
+}
 
- .product-size-content{
+/*製品サイズテーブル*/
+.product-size-content {
     margin-left: 12vw;
     margin-right: 12vw;
- }
+}
 
- .product-size-variations {
+.product-size-variations {
     text-align: center;
     border: 1px solid #c3c3c3;
     width: 46%;
     margin-left: auto;
- }
- .product-size-variations th {
+}
+
+.product-size-variations th {
     background-color: #ECEBEB;
     font-weight: normal;
- }
- .product-size-variations td {
-    font-weight: normal;
- }
+}
 
- 
- .size-label {
+.product-size-variations td {
+    font-weight: normal;
+}
+
+.size-label {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 12px;
     padding-right: 12px;
     border: 1px solid #c3c3c3;
     background-color: #ECEBEB;
- }
- .size-vallue {
+}
+
+.size-vallue {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 22px;
     padding-right: 25px;
     border: 1px solid #c3c3c3;
+}
 
- }
- footer {
+/*フッター部分*/
+footer {
     margin-top: 110px;
- }
- footer p {
+}
+
+footer p {
     text-align: center;
     font-size: 10px;
- }
+}
 
- /*ここからモバイル*/
-
- @media screen and (max-width: 375px){
+/*****
+*** ここからモバイル ***
+******/
+@media screen and (max-width: 375px) {
     * {
         margin: 0;
         padding: 0;
     }
+
     html {
         width: 100%;
     }
-    body {
+
+    /*ヘッダー部分*/
+    header {
+        margin-top: 41px;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
     }
 
-    header {
-    margin-top: 41px;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    }
-    .navigation2{
+    .navigation2 {
         display: none;
     }
-    .navigation1 li{
+
+    .navigation1 li {
         font-size: 12px;
     }
-    .navigation-line{
+
+    .navigation-line {
         display: none;
     }
 
+    /*メイン*/
     main {
         margin-left: 0;
         margin-right: 0;
         display: block;
     }
+
     .left-content {
         width: 100%;
     }
+
     .right-content {
         margin-top: 9px;
         width: 100%;
     }
-    .product-size-content{
+
+    .product-size-content {
         width: 100%;
         margin: 0;
-     }
+    }
 
     .product-size-variations {
         width: 100%;
         font-size: 12px;
     }
+
     .size-vallue {
-    padding-left: 20px;
-    padding-right: 20px;
- } 
-
-
-
-
-
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
 }
